@@ -1,3 +1,7 @@
+import os
+
+os.system("pip install Pillow")
+
 from gossiplib import *
 from data import *
 
