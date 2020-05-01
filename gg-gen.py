@@ -1,9 +1,7 @@
 from gossiplib import *
+from data import *
 
 img = Image.open("base.jpg")
-
-preamble = "i haven't gotten my textbooks yet"
-response = "pdf girl"
 
 draw = ImageDraw.Draw(img)
 draw_preamble(  draw, 
