@@ -1,7 +1,5 @@
 import os
 
-os.system("pip install Pillow")
-
 from gossiplib import *
 from data import *
 
@@ -18,4 +16,4 @@ draw_gossip_girl(   draw,
                     response, 
                     "Helvetica 33 Thin Extended.ttf",86)
 
-img.save("out.png")
+img.save(out_fn)
