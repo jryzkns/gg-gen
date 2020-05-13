@@ -1,0 +1,3 @@
+*.png
+./gossipenv
+./__pycache__
