@@ -3,7 +3,32 @@ from PIL import ImageDraw
 from PIL import ImageFont
 
 import random
-random.seed()
+
+from .productioncontext import ProductionContext
+import os
+
+def generate(pctx, base_img_path, preamble_font_path, response_font_path):
+
+    random.seed()
+    
+    img = Image.open(base_img_path)
+
+    draw = ImageDraw.Draw(img)
+
+    draw_preamble(  draw, 
+                    300, 
+                    pctx.preamble, 
+                    ImageFont.truetype(preamble_font_path, 24))
+
+    draw_gossip_girl(   draw, 
+                        600, 
+                        pctx.response, 
+                        response_font_path, 86)
+
+    if not pctx.out_fn.endswith(".png"):
+        pctx.out_fn += ".png"
+
+    img.save(pctx.out_fn)
 
 def draw_bounding_box(drawobj, locx, locy, w, h, scalex = 1.2, scaley = 1.1):
 
