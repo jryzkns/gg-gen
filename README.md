@@ -4,6 +4,10 @@
 
 meme generator for the popular [crop-edit meme](https://knowyourmeme.com/memes/gossip-girl-title-remixes) for gossip girl.
 
+## Builds
+
+Check [here](https://github.com/jryzkns/gg-gen/releases) for the latest builds
+
 ## Instructions:
 *NOTE:* this set of instructions is for running this code from repl.it!
  - In the file section, go to `data.py` and change the `preamble` and `response` to your favorite iteration of the gossip girl meme
