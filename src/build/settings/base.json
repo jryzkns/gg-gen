@@ -1,6 +1,0 @@
-{
-    "app_name": "Gossip Girl Generator",
-    "author": "Jryzkns",
-    "main_module": "src/main/python/main.py",
-    "version": "1.0.0"
-}

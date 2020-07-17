@@ -9,11 +9,9 @@ from gglib.gossiplib import generate
 import os
 
 class GGApp(QMainWindow):
-    def __init__(self, ctx):
+    def __init__(self):
 
         QMainWindow.__init__(self)
-
-        self.ctx = ctx
 
         self.setMinimumSize(QSize(400, 140))
 
@@ -46,7 +44,6 @@ class GGApp(QMainWindow):
                 self.preambleLine.text(),
                 self.responseLine.text(),
                 QFileDialog.getSaveFileName(self)[0]),
-            self.ctx.get_resource("base.jpg"),
-            self.ctx.get_resource("arial.ttf"),
-            self.ctx.get_resource("Helvetica 33 Thin Extended.ttf"))
+            "base.jpg",
+            "arial.ttf", "Helvetica 33 Thin Extended.ttf")
 
