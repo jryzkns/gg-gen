@@ -1,4 +1,2 @@
 *.png
-/gossipvenv/*
 **/__pycache__/
-/target/
